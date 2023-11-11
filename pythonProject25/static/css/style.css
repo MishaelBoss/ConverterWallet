@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@media screen {
+    #outer {
+        width: screen width - 40;
+    }
+    #inner {
+        text-align: center;
+        width: 600px; margin: 10% auto;
+        color: white;
+        font-weight: bold;
+        border-radius: 30px;
+        height: 400px;
+        background-color: rgba(128, 255, 255, 0.25);
+        color: white;
+    }
+
+    .title{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .icon{
+        width: 40px;
+        height: 40px;
+        margin-top: -22px;
+        border: 2px solid blue;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 430px) and (max-width: 412px){
+    #inner {
+        width: 300px; margin: 50% auto;
+        height: 300px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .icon{
+        margin-top: 0px;
+    }
+}
+
+body{
+    background: url(/static/images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+select, input[type='number']{
+    text-align: center;
+    border: 1px solid #222;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    width: 32%;
+    height: 42px;
+    margin-right: 5px;
+}
+
+input[type='number']{
+    width: 78%;
+}
+
+.select-swap{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url(/static/images/change.png);
+    background-size: cover;
+    background-color: rgba(28,28,28,0);
+    border: medium none;
+}
+
+::placeholder{
+    color: white;
+}
+.amount-button{
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+    border: 1px solid #222;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 80%;
+    height: 42px;
+    margin-right: 5px;
+    margin-top: 5%;
+}
+.amount-button:hover{
+    background-color: white;
+    color: black;
+}
+.converted, .title{
+    font-family: 'Didact Gothic', sans-serif;
+    width: 80%;
+    height: 42px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    background-color: black;
+    color: white;
+}
+
+.converted{
+    font-size: 15px;
+}

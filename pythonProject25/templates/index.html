@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="/static/images/icon.png" type="image/x-icon">
+    <title>CONVERTER</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div id="outer">
+    <div id="inner"><br>
+        <div class="title">
+            <div style="display: flex; align-items: center;">
+                <img src="/static/images/duinocoin.png" class="icon">
+                <h1 style="margin-top: 0;">Конвертер криптовалют</h1>
+            </div>
+        </div>
+        <br>
+        <div class="Block" style="display: flex; justify-content: center;">
+            <div class="select-wrapper" style="font-family: 'Didact Gothic', sans-serif;">
+                <select class="airport-select__departure">
+                    <option value='1' selected>Bitcoin(BTC)</option>
+                    <option value='2'>Ethereum(ETH)</option>
+                    <option value='3'>Litecoin(LTC)</option>
+                </select>
+                <button class="select-swap">&nbsp;</button>
+            </div>
+            
+            <select class="airport-select__arrival" style="font-family: 'Didact Gothic', sans-serif;">
+                <option value='1' selected>Доллар(USDT)</option>
+                <option value='2'>Евро(EUR)</option>
+                <option value='3'>Рубль(RUB)</option>
+            </select>
+        </div>
+    
+        <br>
+        <form method="post">
+            <input type="number" min="0" step="0.001" placeholder="Количество" name="amount" value="{{ amount }}"><br>
+    <!--                {% if total_amount %}-->
+    <!--            <div class="converted">-->
+    <!--                <h1 style="margin: 0;">{{ amount }} {{ first_wallet }} = {{ total_amount }} {{ second_wallet }}</h1>-->
+    <!--            </div>-->
+    <!--            {% endif %}-->
+            <button class="amount-button" type="submit">CONVERT</button>
+        </form>
+    </div>
+</div>
+
+<script src="/static/js/script.js"></script>
+</body>
+</html>
